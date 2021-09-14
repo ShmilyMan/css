@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .one {
+      /*
+        某些情况下，父级的盒子是不方便给高度的(高度要随着子盒子的高度而改变)
+        默认情况下，标准流的子盒子会撑开标准流的父盒子
+        但是子盒子的浮动就不占有位置，最后父盒子高度为0，就影响了下面的标准流的盒子
+      */
+      /*
+        清除浮动的本质：清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题。
+        清除浮动之后，父级就会根据浮动的子盒子自动检测高度，父级有了高度，就不会影响下面的标准流了
+      */
+      /*
+        清除浮动：选择器{clear:属性值;}   clear:清除
+        left:清除左侧的浮动    -- 一般不用
+        right:清除右侧的浮动   -- 一般不用
+        both:清除左右两侧的浮动
+      */
+      /*
+        清除浮动的方法：
+          1.额外标签法（隔墙法）:
+            在所有浮动元素的末尾加上一个空的标签，例如：<div style="clear:both;"></div>
+      */
+      /* height: 500px; */
+      width: 500px;
+      background-color: pink;
+    }
+    .two {
+      height: 500px;
+      width: 600px;
+      background-color: purple;
+    }
+    .one .damao {
+      float: left;
+      width: 250px;
+      height: 250px;
+      background-color: red;
+    }
+    .one .ermao {
+      float: left;
+      width: 300px;
+      height: 300px;
+      background-color: greenyellow;
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+    <div class="damao"></div>
+    <div class="ermao"></div>
+    <div class="clear"></div>
+  </div>
+  <div class="two"></div>
+</body>
+</html>

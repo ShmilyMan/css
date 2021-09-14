@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+        a:visited {
+            color: deepskyblue;
+        }
+        a:hover {
+            color: orange;
+        }
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        伪类选择器：用于向标签中添加一些特殊的效果
+            a:link           -- 未访问的链接（常用）
+            a:visited：      -- 已访问的链接
+            a:hover          -- 鼠标移动到链接上（常用）
+            a:active         -- 选定的链接（鼠标点击但还没有松开）
+        注意：
+            1、写伪类选择器时尽量按照lvha的顺序来写，否则可能出错
+            2、a标签有浏览器默认的样式，在实际中都是给标签单独指定样式
+            3、伪类选择器是一种特殊的交集选择器
+    -->
+    <a href="http://xiaomi.com">小米手机</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            子代选择器只会选择标签的子标签，不会选择孙子标签或者重孙子标签
+        */
+        div>strong {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="people">
+        <p>
+            <strong>孙子标签</strong>
+            <strong>孙子标签</strong>
+            <strong>孙子标签</strong>
+        </p>
+    </div>
+    <div class="aaa">
+        <strong>儿子标签</strong>
+        <strong>儿子标签</strong>
+        <strong>儿子标签</strong>
+    </div>
+</body>
+</html>

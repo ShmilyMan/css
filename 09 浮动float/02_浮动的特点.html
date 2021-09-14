@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .one {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      /*
+          1.浮动的盒子脱离了普通的标准流，会漂浮在普通标准流的上面
+          2.浮动的盒子会把自己原来的位置漏给下面标准流的盒子，就是不在占有原来的位置
+          3.浮动默认的会改变盒子的display属性，会将盒子变成行内块元素，多个浮动的盒子会在一行中没有缝隙的进行排列
+          4.当页面的大小不足以装下盒子时，会把盒子挤下去
+      */
+      float: left;
+    }
+    .two {
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="one"></div>
+  <div class="two"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .father {
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+    }
+    .father .damao {
+      width: 250px;
+      height: 250px;
+      background-color: orchid;
+    }
+    .father .ermao {
+      float: left;
+      width: 250px;
+      height: 250px;
+      background-color: royalblue;
+    }
+  </style>
+</head>
+<body>
+<!--
+  浮动只会影响当前或者后面的盒子，不会影响前面的标准流
+    注意：如果一个盒子里面有多个盒子，如果其中一个盒子浮动了，其他的兄弟也该浮动，防止引起问题
+-->
+<div class="father">
+  <div class="damao"></div>
+  <div class="ermao"></div>
+</div>
+</body>
+</html>

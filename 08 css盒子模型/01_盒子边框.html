@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子边框</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /*border-width: 2px;*/
+            /*border-style: solid;*/
+            /*border-color: pink;*/
+            /*盒子边框样式的简写*/
+            border: 2px solid pink;
+        }
+        .nav {
+            width: 200px;
+            height: 200px;
+            border-top: 2px solid red;
+            border-bottom: 2px solid pink;
+            border-left: 2px solid green;
+            border-right: 2px solid blue;
+        }
+        input {
+            border: none;
+            border-bottom: 2px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        盒子边框（border）
+        border-width：盒子边框大小
+        border-style：盒子边框的样式
+            solid           -- 实线
+            dashed          -- 虚线
+            dotted          -- 点线
+        border-color：盒子边框的颜色
+        盒子边框样式的简写：
+            没用固定的格式，但一般采用   边框大小    边框样式    边框颜色的顺序
+        注意：可以分别给盒子的四个边框指定样式，也可以改变input的输入框的边框的样式
+    -->
+    <div></div>
+    <!-- 给盒子的四个边框分别指定不同的样式 -->
+    <div class="nav"></div>
+    <!-- 修改input输入框的边框 -->
+    用户名：<input type="text"> <br />
+    密码：<input type="text">
+</body>
+</html>

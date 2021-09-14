@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  body {
+    height: 3000px;
+  }
+  div {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    margin: 100px auto;
+  }
+  div img {
+    /*跟父亲的定位没有关系，只认浏览器的可视窗口*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+  }
+</style>
+<body>
+  <!--
+      固定定位（fixed）  --  固定定位是绝对定位地一种形式（认死理型）
+      固定定位的特点：
+          1. 完全脱标(完全不占有位置)
+          2. 只认浏览器的可视窗口  --  浏览器的可视窗口  +  边偏移属性  来设置元素的位置
+              跟父元素的定不定位没有关系
+              不随滚动条滚动
+  -->
+  <div>
+    <img src="./images/sun.jpg" alt="" />
+  </div>
+</body>
+</html>

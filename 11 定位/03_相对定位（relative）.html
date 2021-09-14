@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /*特性1*/
+    /*在相对于原来的位置上移动一段距离*/
+    /*div {
+      height: 200px;
+      width: 200px;
+      background-color: pink;
+      margin: 100px;
+      position: relative;
+      top: 100px;
+      left: 100px;
+    }*/
+    /*特性2*/
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+    /*原来底下的盒子并没有顶上去*/
+    .twe {
+      position: relative;
+      left: 100px;
+      top: 100px;
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+  <!--
+      相对定位（relative）：相对定位是元素相对于它在原来标准流中的位置来说得。（自恋型）
+        相对定位地特性：
+          -- 定位地位置在原有的位置上移动一段距离
+          -- 原来在标准流的区域继续占有，后面的盒子仍然以标准流的方式对待它
+  -->
+  <!--特性1-->
+<!--  <div>
+
+  </div>-->
+  <!--特性2-->
+  <div>1</div>
+  <div class="twe">2</div>
+  <div>3</div>
+</body>
+</html>

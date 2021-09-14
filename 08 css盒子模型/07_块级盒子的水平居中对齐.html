@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            /*
+                块级盒子想要水平居中对齐需要满足两个条件：
+                    1、需要对盒子指定宽度(如果没有宽度块级盒子将充满整个屏幕，也就没有居中对齐一说)
+                    2、需要设置左右外边距为auto
+            */
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            /* 写法有三种 */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* 第二种写法 上下auto不起作用 */
+            /* margin: auto; */
+            /* 第三种写法 上下为0  左右为auto */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 180px;
+            height: 180px;
+            background-color: pink;
+            /* 上下左右的内边距都为10px */
+            padding: 10px;
+            /*
+                盒子的宽度 = 边框的宽度*2 + 内边距*2 + 盒子本身的宽度
+                因为增加内边距会撑大盒子，所以写盒子的实际宽度时 盒子的实际宽度 = 盒子的宽度 - 内边距 * 2
+                注意：计算盒子的宽度时不计算边框的宽度
+                特殊情况：如果一个块级的盒子没有给定宽度，则他默认的和父亲一样宽，这样当给定padding时不会撑开盒子
+                    指定padding-top会撑大盒子
+            */
+        }
+        p {
+            height: 30px;
+            padding-top: 10px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p> 哒哒哒 </p>
+    </div>
+</body>
+</html>

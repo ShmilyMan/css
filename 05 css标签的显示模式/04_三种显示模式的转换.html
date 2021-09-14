@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        div {
+            display: inline;
+            background-color: red;
+        }
+        .gbt {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        三种显示模式的转换：
+            display: block;             转换成块级元素
+            display: inline;            转换成行内元素
+            display: inline-block;      转换成行内块元素
+    -->
+    <a href="#">行内元素</a>
+    <a href="#">行内元素</a>
+    <div>块级元素</div>
+    <div>块级元素</div>
+    <a href="#" class="gbt">行内块元素</a>
+    <a href="#" class="gbt">行内块元素</a>
+</body>
+</html>

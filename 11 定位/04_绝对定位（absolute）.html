@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .father {
+      width: 400px;
+      height: 400px;
+      background-color: pink;
+      margin: 100px;
+      /*如果父元素有定位，则将元素依据最近的已经定位（绝对，固定或者相对定位）的父元素（祖先）进行定位，不管是父亲，爷爷级的元素也可以*/
+      position: relative;
+    }
+    .son {
+      width: 350px;
+      height: 350px;
+      background-color: purple;
+      /*如果父亲的盒子没有给出定位，则子盒子的移动以浏览器为基准（绝对定位）*/
+      position: absolute;
+      left: 50px;
+      top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+      绝对定位（absolute）：绝对定位地元素以带有定位地父级元素来移动位置（拼爹型）  *** 父级的盒子必须是带有定位地
+        特性：
+            1.完全脱标 --- 完全不占有位置 --- 相当于浮动起来了，而相对定位是不脱标的，保留了之前标准流的位置
+            2.如果父级的盒子没有定位，则以浏览器为准定位（document文档）
+        口诀：子绝父相，儿子要用绝对定位，而父亲要用相对定位（父亲要占有位置，而儿子要随意摆放）
+  -->
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+</html>

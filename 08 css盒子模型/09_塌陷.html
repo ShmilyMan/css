@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            /*border-top: 1px solid transparent;*/
+            /*padding-top: 50px;*/
+            overflow: hidden;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        塌陷：当给父亲的儿子盒子添加margin属性时，父亲和儿子的盒子都会同时向下移动（只有上下起作用）
+        解决的方法：
+            1、给父亲的盒子添加一个上边框
+            2、给父亲的盒子指定内边距
+            3、为父亲的盒子添加   overflow:hidden
+    -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

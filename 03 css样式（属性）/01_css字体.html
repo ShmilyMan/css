@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        .title {
+            /*font-size: 20px;*/
+            /*font-family: Arial,"新宋体","Microsoft Himalaya";*/
+            /*font-weight: 700;           !* 让字体加粗 *!*/
+            /*font-style: italic;*/
+            /* 综合性写法 */
+            font: italic 700 20px "微软雅黑";
+        }
+        h1 {
+            font-weight: 400;           /* 让字体不加粗，正常显示 */
+        }
+        /* 让倾斜的字体变正常 */
+        em {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1.font-size：指定字体的大小
+            （1）火狐和谷歌浏览器默认的字体大小是16px；一般给body标签指定整个页面的大小来兼容不同的浏览器；
+            （2）不能使用默认字体大小的方式；
+            （3）字体大小的单位有很多，但我们使用px为字体大小的单位；
+        2.font-family：设置电脑的字体
+            （1）可以设置多个字体，但排在前面的字体优先级最高，系统会优先查找排在前面的字体，当所有的字体都没有找到时，
+            则采用默认字体；
+            （2）谷歌浏览器默认的字体是微软雅黑，书写时，中文名称的字体要加引号，英文名称的字体出现空格，#，$等符号
+            时也要加双引号；
+        3.font-weight：设置字体的粗细；
+            （1）normal 默认值 相当于不加粗的（400）
+            （2）bold  粗体  700
+            （3）数字 100-900                               -- 书写时不加px
+       4.font-style：字体的倾斜；
+            （1）normal：正常的字体；
+            （2）italic：让字体倾斜；
+       5.font设置字体的综合写法：
+             font: font-style  font-weight  font-size/line-height  font-family;
+             其中：font-style  font-weight可以省略但必须有font-size/line-height  font-family
+             （必须按照规定的格式书写）
+    -->
+    <p class="title">粉红色的回忆</p>
+    <p>夏天夏天悄悄过去留下小秘密</p>
+    <p>压心底 压心底 不能告诉你</p>
+    <p>晚风春过温暖我心底 我又想起你</p>
+    <p>多甜蜜 多甜蜜 怎能忘记</p>
+    <h1> 韩克伟 </h1>
+    <em> 韩克伟专辑 </em>
+</body>
+</html>

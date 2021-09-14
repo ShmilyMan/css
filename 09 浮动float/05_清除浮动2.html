@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .one {
+      /*
+        清除浮动的方法：
+          2.给浮动的盒子添加overflow:
+            overflow为hidden| auto| scroll都可以
+      */
+      /* height: 500px; */
+      overflow: hidden;
+      width: 500px;
+      background-color: pink;
+    }
+    .two {
+      height: 500px;
+      width: 600px;
+      background-color: purple;
+    }
+    .one .damao {
+      float: left;
+      width: 250px;
+      height: 250px;
+      background-color: red;
+    }
+    .one .ermao {
+      float: left;
+      width: 300px;
+      height: 300px;
+      background-color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+    <div class="damao"></div>
+    <div class="ermao"></div>
+  </div>
+  <div class="two"></div>
+</body>
+</html>
